@@ -17,6 +17,7 @@ func sum(q: Queue<Int>) -> Int? {
     return nil
 }
 
+lsdfmlsdkfmlksdmf
 //Find the smallest element in a queue
 func smallest<T:Comparable>(q: Queue<T>) -> T? {
     return nil
