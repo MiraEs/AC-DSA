@@ -24,7 +24,11 @@ class LinekdList<T> {
 
 class Queue<T> {
     private var list = LinekdList<T>()
+    //front(head) -> back(tail)
+    // head -> -> -> tail ->
+    //deQ ---------> enQ
     
+    //Adds an element to the back of the queue.
     func enQueue(newElement: T) {
         if list.head.key == nil {
             list.head.key = newElement
@@ -37,6 +41,7 @@ class Queue<T> {
         }
     }
     
+    //Removes and returns the first element in the queue.
     func deQueue() -> T? {
         if let oldHeadKey = list.head.key {
             if let nextNode = list.head.next {
